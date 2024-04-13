@@ -139,18 +139,16 @@ h2 {
     justify-content: right;
     text-decoration: none;
     color: white;
-    background-color: rgb(23, 141, 98);
+    background-color: rgb(15, 79, 55);
     padding: 10px;
     bottom: 10px;
 
 
 }
 
-footer {
-    color: green;
-    background-color: rgb(23, 141, 98);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    margin-top: 40px;
-}
+
+    footer {
+        background-color:  rgb(15, 79, 55);
+        width: 100%;
+        padding: 20px;
+    }

@@ -2,7 +2,7 @@ p {
     font-family: "Montserrat", sans-serif;
 }
 
-h2 {
+h1,h2 {
     font-size: 40px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -125,11 +125,11 @@ nav {
 footer {
     display: flex;
     color: black;
-    background-color:#02A659;
+    background-color: #02A659;
     padding: 20px;
     margin-top: 40px;
     justify-content: space-between;
-   }
+}
 
 
 
@@ -171,6 +171,7 @@ footer {
     font-family: "Montserrat", sans-serif;
     padding: 20px;
 }
+
 .text-box-index {
     border: #124A43 solid 2px;
     border-radius: 15px;
@@ -183,6 +184,7 @@ footer {
     padding: 20px;
     font-size: 40px;
 }
+
 /* testes de grid */
 
 .contraIndicacoes-grid {
@@ -222,6 +224,7 @@ footer {
     padding: 10px;
     font-size: 30px
 }
+
 .conteudo-servico {
     display: grid;
     grid-template-areas: "imagem textos";
@@ -245,14 +248,18 @@ footer {
 
 .text-box-group-servico {
     display: grid;
-    grid-template-rows: auto; /* Título */
-    grid-template-columns: 1fr 1fr; /* Duas colunas para as caixas de texto */
+    grid-template-rows: auto;
+    /* Título */
+    grid-template-columns: 1fr 1fr;
+    /* Duas colunas para as caixas de texto */
     gap: 10px;
 }
 
 .title-box-servico {
-    grid-column: 1 / -1; /* Faz o título ocupar todas as colunas do grupo */
-    background-color: #124A43; /* Exemplo de estilo */
+    grid-column: 1 / -1;
+    /* Faz o título ocupar todas as colunas do grupo */
+    background-color: #124A43;
+    /* Exemplo de estilo */
     color: white;
     text-align: center;
     padding: 10px;
@@ -295,6 +302,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         /* Muda para 2 colunas em telas menores */
     }
+
     .conteudo-servico {
         grid-template-areas:
             "imagem"
@@ -311,63 +319,53 @@ footer {
     }
 
 }
-/* CSS PRODUTOS */ 
 
-.container-nome{
-    display: flex;
+/* CSS PRODUTOS */
+
+/* como usar */
+
+.container-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+    gap: 20px;
+}
+
+
+.child-img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+.child-img:hover {
+    opacity: 1;
+}
+
+
+/* contraindicacaoes */
+
+.contraIndicacoes-grid {
+    padding: 1%;
+}
+
+.contraFundo {
+    background-color: #124A43;
+    width: 100%;
+    height: 100%;
+}
+
+.contraFundo h1 {
+    color: #fff;
     padding-left: 1%;
-    max-width: 710px; /* Define o máximo de largura para o container */
-    }
-    
-    .child-text{
-        padding: 2%;
-        margin-top: 3%;
-    }
-    
-    /* como usar */
-    
-    .container-img{
-        display: flex;
-    }
-    
-    .container-img h2{
-        position: absolute;
-        float: left;
-        margin-top: 0%;
-        padding-left: 1%;
-    }
-    
-    .child-img{
-        margin-top: 3%;
-        padding: 1%;
-        height: 100%;
-    }
-    
-    
-    /* contraindicacaoes */ 
-    
-    .contraIndicacoes-grid{
-        padding: 1%;
-    }
-    
-    .contraFundo{
-        background-color: #124A43;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .contraFundo h1{
-        color: #fff;
-        padding-left: 1%;
-        padding-top: 1%;
-    }
-    
-    .feedback-clientes{
-        background-color: #124A43;
-    }
-    
-    .feedback-clientes h1{
-        color: #fff;
-        padding-left: 1%;
-        padding-top: 1%;
-    }
+    padding-top: 1%;
+}
+
+.feedback-clientes {
+    background-color: #124A43;
+}
+
+.feedback-clientes h1 {
+    color: #fff;
+    padding-left: 1%;
+    padding-top: 1%;
+}
